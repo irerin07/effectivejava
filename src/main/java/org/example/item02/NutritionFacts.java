@@ -1,7 +1,7 @@
 package org.example.item02;
 
 /**
- * @author 민경수
+ * @author
  * @description nutrition facts
  * @since 2023.09.19
  **********************************************************************************************************************/
@@ -19,7 +19,7 @@ public class NutritionFacts {
     private final int servingSize;
     private final int servings;
 
-    // 섵낵 매개변수 - 기본값으로 초기화한다.
+    // 선택 매개변수 - 기본값으로 초기화한다.
     private int calories = 0;
     private int fat = 0;
     private int sodium = 0;

@@ -34,7 +34,7 @@ public class Calzone extends Pizza{
 
   @Override
   public String toString() {
-    return String.format("%s로 토핑한 칼조네 피자 (소스는 %s에", toppings, sauceInside ? "안" : "바깥");
+    return String.format("%s");
   }
 
 }
