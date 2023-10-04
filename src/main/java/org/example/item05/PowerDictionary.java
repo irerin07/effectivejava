@@ -4,13 +4,16 @@ import java.util.List;
 
 /**
  * @author 민경수
- * @description dictionary
+ * @description power dictionary
  * @since 2023.10.04
  **********************************************************************************************************************/
-public interface Dictionary {
+public class PowerDictionary {
+  public boolean contains(String word) {
+    return false;
+  }
 
-  public boolean contains(String word);
-
-  public List<String> closeWordsTo(String typo);
+  public List<String> closeWordsTo(String typo) {
+    return null;
+  }
 
 }

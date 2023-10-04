@@ -1,16 +1,14 @@
 package org.example.item05;
 
-import java.util.List;
-
 /**
  * @author 민경수
- * @description dictionary
+ * @description korean default dictionary
  * @since 2023.10.04
  **********************************************************************************************************************/
-public interface Dictionary {
+public class KoreanDefaultDictionary extends DefaultDictionary{
 
-  public boolean contains(String word);
-
-  public List<String> closeWordsTo(String typo);
-
+  public String test() {
+    System.out.println("test");
+    return "test";
+  }
 }

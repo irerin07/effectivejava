@@ -4,13 +4,17 @@ import java.util.List;
 
 /**
  * @author 민경수
- * @description dictionary
+ * @description default dictionary
  * @since 2023.10.04
  **********************************************************************************************************************/
-public interface Dictionary {
+public class DefaultDictionary implements Dictionary{
 
-  public boolean contains(String word);
+  public boolean contains(String word) {
+    return false;
+  }
 
-  public List<String> closeWordsTo(String typo);
+  public List<String> closeWordsTo(String typo) {
+    return null;
+  }
 
 }

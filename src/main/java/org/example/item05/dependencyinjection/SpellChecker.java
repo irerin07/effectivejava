@@ -1,8 +1,9 @@
 package org.example.item05.dependencyinjection;
 
 import java.util.List;
+import java.util.function.Supplier;
 
-import org.example.item05.Dictionary;
+import org.example.item05.PowerDictionary;
 
 /**
  * @author 민경수
@@ -11,10 +12,14 @@ import org.example.item05.Dictionary;
  **********************************************************************************************************************/
 public class SpellChecker {
 
-  private final Dictionary dictionary;
+  private final PowerDictionary dictionary;
 
-  public SpellChecker(Dictionary dictionary) {
+  public SpellChecker(PowerDictionary dictionary) {
     this.dictionary = dictionary;
+  }
+
+  public SpellChecker(Supplier<PowerDictionary> powerDictionaryFactory) {
+    this.dictionary = powerDictionaryFactory.get();
   }
 
   public boolean isValid(String word) {
